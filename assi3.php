@@ -1,6 +1,6 @@
 <form action="handelassi3.php" method="post">
     
-    <input type="text" name="keyword">
+    <input type="text" name="keyword" placeholder="Enter ProductName">
     
     <input type="submit" value="Search">
     

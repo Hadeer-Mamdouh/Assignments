@@ -5,6 +5,8 @@ $dbuser="root";
 $dbpassword="";
 $dbname="rout-company";   // check your DB name
 
+if(isset($_SESSION['mail'])){
+
 $keyword=$_POST["keyword"];
 
 
@@ -30,6 +32,14 @@ if($result->num_rows>0){
         echo $row["productName"] . "<br>";
     }
 }
+
+}
+    
+    }
+
+else {
+    
+    	echo " Go <a href='login.php'>Login</a> <br/>";
 
 }
 ?>

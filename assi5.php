@@ -7,6 +7,8 @@ $dbname="rout-company";   // check your DB name
 
 
 
+if(isset($_SESSION['mail'])){
+
 
 $conn= new mysqli ($servername,$dbuser,$dbpassword,$dbname);
 
@@ -34,6 +36,13 @@ $result=$conn->query($query);
         echo "<table><tr><td>" . $row['productName'] . "</td><td>" . $row['SUM(orderdetails.quantityOrdered)']. " </td><td> " . $row["SUM(orderdetails.quantityOrdered*orderdetails.priceEach)"]."</td></tr></table>"  ;
     }
   }
+
+}
+  }
+
+else {
+    
+    	echo " Go <a href='login.php'>Login</a> <br/>";
 
 }
 ?>

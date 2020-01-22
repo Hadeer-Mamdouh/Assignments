@@ -6,6 +6,7 @@ $dbpassword="";
 $dbname="rout-company";   // check your DB name
 
 
+if(isset($_SESSION['mail'])){
 
 
 $conn= new mysqli ($servername,$dbuser,$dbpassword,$dbname);
@@ -34,6 +35,14 @@ $result=$conn->query($query);
         echo "<table><tr><td>" . $row['lastName2'] . " " . $row['firstName2']. "| |" . " </td><td> " . $row["lastName1"]. " </td><td> " . $row['firstName1']."</td></tr></table>"  ;
     }
   }
+
+}
+    
+}
+
+else {
+    
+    	echo " Go <a href='login.php'>Login</a> <br/>";
 
 }
 ?>

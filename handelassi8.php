@@ -5,6 +5,8 @@ $dbuser="root";
 $dbpassword="";
 $dbname="rout-company";   // check your DB name
 
+if(isset($_SESSION['mail'])){
+
 $input=$_POST["input"];
 
 
@@ -33,6 +35,13 @@ if($result->num_rows>0){
         echo "productName : " . $row["productName"] . " | Sum of quantityOrdered : " .  $row["SUM(orderdetails.quantityOrdered)"] . "<br>";
     }
 }
+
+}
+}
+
+else {
+    
+    	echo " Go <a href='login.php'>Login</a> <br/>";
 
 }
 ?>

@@ -1,11 +1,11 @@
 <?php
 session_start();
-    $email                =$_POST['email'];
-    $password             =$_POST['password'];
-    $_SESSION['email']    =$email;
-    $_SESSION['password'] =$password;
-if(isset($_SESSION['email'])){
-
+   
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+    $mail=$_POST['mail'];
+    $pass=$_POST['pass'];
+    $_SESSION['mail']=$mail;
+    $_SESSION['pass']=$pass;
 echo "Welcome to my First web site<br><br><br>";
 
 echo "Go to <br><br>
