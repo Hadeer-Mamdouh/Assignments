@@ -39,19 +39,6 @@ print_r ($result);
 
 $employeeNumber=$_GET["employeeNumber"];
 
-$lastName=$_GET["lastName"];
-
-$firstName=$_GET["firstName"];
-
-$extension=$_GET["extension"];
-
-$email=$_GET["email"];
-
-$officeCode=$_GET["officeCode"];
-
-$reportsTo=$_GET["reportsTo"];
-
-$jobTitle=$_GET["jobTitle"];
 
 $password=$_GET["password"];
 
